@@ -25,18 +25,21 @@
           <button class="btn-primary desktop-btn">Contact Us</button>
           <div class="u-menu">
             <button class="u-menu__btn" id="uMenuBtn">
-              <span></span>
-              <span></span>
-              <span></span>
+              <div class="u-menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </button>
-            <div class="u-menu__panel" id="uMenuPanel">
+
+            <div class="u-menu__panel">
               <ul class="u-menu__list">
-                <a href="./index.html"><li>Home</li></a>
-                <a href="./services.html"><li>Services</li></a>
-                <a href="./works.html"><li>Works</li></a>
-                <a href="./process.html"><li>Process</li></a>
-                <a href="./about.html"><li>About</li></a>
-                <a href="./careers.html"><li>Careers</li></a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./works.html">Works</a></li>
+                <li><a href="./process.html">Process</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./careers.html">Careers</a></li>
               </ul>
             </div>
           </div>
@@ -335,12 +338,11 @@
       els.forEach((el) => obs.observe(el));
     </script>
     <script>
+      const menu = document.querySelector(".u-menu");
       const btn = document.getElementById("uMenuBtn");
-      const panel = document.getElementById("uMenuPanel");
 
       btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        panel.classList.toggle("active");
+        menu.classList.toggle("active");
       });
     </script>
   </body>
