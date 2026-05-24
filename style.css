@@ -60,15 +60,10 @@ a {
   color: inherit;
 }
 
-
-/* MENU */
-
 .u-menu {
   position: relative;
   z-index: 9999;
 }
-
-/* BUTTON */
 
 .u-menu__btn {
   position: relative;
@@ -100,8 +95,6 @@ a {
   transition: 0.45s;
 }
 
-/* GLOW */
-
 .u-menu__btn::before {
   content: "";
 
@@ -123,8 +116,6 @@ a {
   opacity: 1;
 }
 
-/* INNER */
-
 .u-menu__btn::after {
   content: "";
 
@@ -138,8 +129,6 @@ a {
   z-index: 1;
 }
 
-/* ICON */
-
 .u-menu__icon {
   position: relative;
 
@@ -148,8 +137,6 @@ a {
 
   z-index: 2;
 }
-
-/* LINES */
 
 .u-menu__icon span {
   position: absolute;
@@ -170,8 +157,6 @@ a {
     top 0.4s;
 }
 
-/* POSITIONS */
-
 .u-menu__icon span:nth-child(1) {
   top: 0;
 }
@@ -183,8 +168,6 @@ a {
 .u-menu__icon span:nth-child(3) {
   top: 18px;
 }
-
-/* ACTIVE ICON */
 
 .u-menu.active .u-menu__icon span:nth-child(1) {
   top: 9px;
@@ -200,8 +183,6 @@ a {
   top: 9px;
   transform: rotate(-45deg) scale(1.1);
 }
-
-/* PANEL */
 
 .u-menu__panel {
   position: absolute;
@@ -241,8 +222,6 @@ a {
   transition: 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* PANEL LIGHT */
-
 .u-menu__panel::before {
   content: "";
 
@@ -259,16 +238,12 @@ a {
   animation: pulse 4s infinite linear;
 }
 
-/* ACTIVE PANEL */
-
 .u-menu.active .u-menu__panel {
   opacity: 1;
   visibility: visible;
 
   transform: perspective(1200px) rotateX(0) translateY(0) scale(1);
 }
-
-/* LIST */
 
 .u-menu__list {
   list-style: none;
@@ -281,8 +256,6 @@ a {
   z-index: 2;
 }
 
-/* ITEMS */
-
 .u-menu__list li {
   opacity: 0;
 
@@ -290,8 +263,6 @@ a {
 
   animation: none;
 }
-
-/* ACTIVE STAGGER */
 
 .u-menu.active .u-menu__list li {
   animation: itemAnimation 0.7s forwards;
@@ -321,8 +292,6 @@ a {
   animation-delay: 0.38s;
 }
 
-/* LINKS */
-
 .u-menu__list a {
   position: relative;
 
@@ -350,8 +319,6 @@ a {
   transition: 0.35s;
 }
 
-/* HOVER */
-
 .u-menu__list a:hover {
   transform: translateX(10px) scale(1.03);
 
@@ -361,8 +328,6 @@ a {
 
   box-shadow: 0 0 25px rgba(0, 255, 140, 0.18);
 }
-
-/* SHINE */
 
 .u-menu__list a::before {
   content: "";
@@ -388,8 +353,6 @@ a {
 .u-menu__list a:hover::before {
   left: 120%;
 }
-
-/* KEYFRAMES */
 
 @keyframes spin {
   100% {
@@ -418,8 +381,6 @@ a {
     transform: translateX(0) scale(1);
   }
 }
-
-/* DESKTOP */
 
 @media (min-width: 992px) {
   .u-menu {
@@ -1207,10 +1168,6 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .card {
     border-right: none;
   }
@@ -1221,6 +1178,10 @@ h2 {
 
   .testimonials__card h1 {
     font-size: 24px;
+  }
+  strong {
+    padding-left: 28px;
+    font-size: 16px;
   }
 }
 
